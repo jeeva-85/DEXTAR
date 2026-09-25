@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "stations_count": 8990,
+    "trains_count": 5208,
+    "schedules_count": 417080,
+    "timestamp": "2026-09-05T23:32:42.078375"
+  },
+  "stations_issues": {
+    "missing_code": 0,
+    "missing_coords": 293,
+    "duplicate_codes": 0,
+    "invalid_latitudes": 0,
+    "invalid_longitudes": 0
+  },
+  "trains_issues": {
+    "missing_number": 0,
+    "duplicate_train_numbers": 0,
+    "negative_distance": 0,
+    "missing_distance": 15
+  },
+  "schedules_issues": {
+    "missing_arrival": 27835,
+    "missing_departure": 27827,
+    "orphan_station_references": 0,
+    "orphan_train_references": 0,
+    "duplicate_train_station_stop": 1079
+  }
+}
