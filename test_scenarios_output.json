@@ -1,0 +1,92 @@
+[
+  {
+    "scenario": "Scenario 1: Healthy / Normal Railway Condition",
+    "priority_score": 35.51,
+    "priority_level": "MEDIUM",
+    "failure_probability": 0.2198,
+    "failure_risk_level": "MEDIUM",
+    "predicted_severity": "Low",
+    "top_shap_factors": [
+      {
+        "feature": "mechanical_wear_composite",
+        "shap_value": -9.9488,
+        "direction": "decreases_priority"
+      },
+      {
+        "feature": "sensor_health_index",
+        "shap_value": -8.0926,
+        "direction": "decreases_priority"
+      },
+      {
+        "feature": "inspection_score",
+        "shap_value": -7.9954,
+        "direction": "decreases_priority"
+      },
+      {
+        "feature": "wheel_wear_percent",
+        "shap_value": -1.0417,
+        "direction": "decreases_priority"
+      }
+    ]
+  },
+  {
+    "scenario": "Scenario 2: Moderate-Risk Railway Condition",
+    "priority_score": 55.89,
+    "priority_level": "HIGH",
+    "failure_probability": 0.3389,
+    "failure_risk_level": "MEDIUM",
+    "predicted_severity": "High",
+    "top_shap_factors": [
+      {
+        "feature": "mechanical_wear_composite",
+        "shap_value": -9.8793,
+        "direction": "decreases_priority"
+      },
+      {
+        "feature": "inspection_score",
+        "shap_value": 2.6483,
+        "direction": "increases_priority"
+      },
+      {
+        "feature": "sensor_health_index",
+        "shap_value": 0.6059,
+        "direction": "increases_priority"
+      },
+      {
+        "feature": "power_consumption_kw",
+        "shap_value": -0.4773,
+        "direction": "decreases_priority"
+      }
+    ]
+  },
+  {
+    "scenario": "Scenario 3: High-Risk / Critical Failure Condition",
+    "priority_score": 78.98,
+    "priority_level": "CRITICAL",
+    "failure_probability": 0.5787,
+    "failure_risk_level": "HIGH",
+    "predicted_severity": "Low",
+    "top_shap_factors": [
+      {
+        "feature": "sensor_health_index",
+        "shap_value": 14.0945,
+        "direction": "increases_priority"
+      },
+      {
+        "feature": "inspection_score",
+        "shap_value": 10.9208,
+        "direction": "increases_priority"
+      },
+      {
+        "feature": "mechanical_wear_composite",
+        "shap_value": -10.3016,
+        "direction": "decreases_priority"
+      },
+      {
+        "feature": "wheel_wear_percent",
+        "shap_value": 1.4471,
+        "direction": "increases_priority"
+      }
+    ]
+  }
+]

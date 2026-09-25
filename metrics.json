@@ -1,0 +1,89 @@
+{
+  "status": "TRAINED",
+  "dataset_mode": "REAL_DATA",
+  "timestamp": "2026-09-10T15:37:10.363723",
+  "training_duration_seconds": 29.1,
+  "m1_priority": {
+    "mae": 0.4361,
+    "rmse": 0.7915,
+    "r2": 0.9966,
+    "spearman_correlation": 0.9975
+  },
+  "m3_failure": {
+    "accuracy": 0.8222,
+    "precision": 0.8602,
+    "recall": 0.3613,
+    "f1": 0.5089,
+    "roc_auc": 0.6779,
+    "pr_auc": 0.5952,
+    "confusion_matrix": [
+      [
+        21904,
+        449
+      ],
+      [
+        4884,
+        2763
+      ]
+    ]
+  },
+  "m3_severity": {
+    "accuracy": 0.2806,
+    "macro_precision": 0.2463,
+    "macro_recall": 0.2467,
+    "macro_f1": 0.2391,
+    "weighted_f1": 0.2963,
+    "confusion_matrix": [
+      [
+        85,
+        149,
+        178,
+        152
+      ],
+      [
+        205,
+        316,
+        420,
+        383
+      ],
+      [
+        490,
+        860,
+        1110,
+        1013
+      ],
+      [
+        331,
+        565,
+        755,
+        635
+      ]
+    ],
+    "per_class": {
+      "Critical": {
+        "precision": 0.0765,
+        "recall": 0.1507,
+        "f1": 0.1015,
+        "support": 564
+      },
+      "High": {
+        "precision": 0.1672,
+        "recall": 0.2387,
+        "f1": 0.1966,
+        "support": 1324
+      },
+      "Low": {
+        "precision": 0.4507,
+        "recall": 0.3196,
+        "f1": 0.374,
+        "support": 3473
+      },
+      "Medium": {
+        "precision": 0.2909,
+        "recall": 0.2778,
+        "f1": 0.2842,
+        "support": 2286
+      }
+    }
+  }
+}
